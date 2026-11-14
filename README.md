@@ -5,13 +5,13 @@ Casca fina em volta da [API Fiscal SysVelox](https://api.sysvelox.com/docs/), pr
 ## Instalação
 
 ```bash
-npm install @sysvelox/api-fiscal
+npm install sysvelox-fiscal-api
 ```
 
 ## Uso
 
 ```ts
-import { SysVeloxClient } from '@sysvelox/api-fiscal';
+import { SysVeloxClient } from 'sysvelox-fiscal-api';
 
 const client = new SysVeloxClient('sk_test_...');
 
@@ -35,7 +35,7 @@ console.log(nota.status); // "autorizado", "rejeitado" ou "contingencia"
 ### Verificar webhook
 
 ```ts
-import { verificarWebhook } from '@sysvelox/api-fiscal';
+import { verificarWebhook } from 'sysvelox-fiscal-api';
 
 app.post('/webhooks/sysvelox', express.raw({ type: 'application/json' }), (req, res) => {
   const corpoBruto = req.body.toString('utf8');

@@ -1,5 +1,5 @@
 {
-  "name": "@sysvelox/api-fiscal",
+  "name": "sysvelox-fiscal-api",
   "version": "0.1.0",
   "description": "SDK Node.js oficial para a API Fiscal SysVelox (NF-e, NFC-e, NFS-e).",
   "main": "dist/index.js",
@@ -10,6 +10,10 @@
     "test": "node --test --import tsx tests/*.test.ts"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clabtechdev/sysvelox-sdk-node"
+  },
   "engines": {
     "node": ">=18"
   },
